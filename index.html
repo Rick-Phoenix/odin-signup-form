@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Odin Signup Form</title>
+</head>
+<body>
+    <div class="background">
+        <div class="logo-strip">
+            <img src="odin-lined.png" alt="Odin">
+            <div class="logo-text">ODIN</div>
+        </div>
+    </div>
+    <div class="form-container">
+        <div class="title">This is a very real website with a very real form! Fill in your details and click on the very real button below!</div>
+        <div class="form">
+            <h2>Let's do this!</h2>
+            <form action="" method="post" id="Signup">
+                <div class="form-col">
+                    <div class="form-field">
+                        <label for="first_name">First Name:</label>
+                        <input type="text" placeholder="First name..." name="first_name" id="first_name">
+                    </div>
+                    <div class="form-field">
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" placeholder="Last name..." name="last_name" id="last_name">
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="Email..." name="email" id="email">
+                    </div>
+                </div>
+
+                <div class="form-col">
+                    <div class="form-field">
+                        <label for="phone_number">Phone Number:</label>
+                        <input type="number" placeholder="Phone Number..." maxlength="12" name="phone_number" id="phone_number">
+                    </div>
+                    <div class="form-field">
+                        <label for="password">Password:</label>
+                        <input type="password" placeholder="Password..." pattern=".{8,}" title="Your password must be at least 8 characters long." name="password" id="password">
+                    </div>
+                    <div class="form-field">
+                        <label for="conf_password">Confirm Password:</label>
+                        <input type="password" placeholder="Confirm password.." pattern=".{8,}" title="Your password must be at least 8 characters long." name="conf_password" id="conf_password">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="button">
+            <button type="button" form="Signup">Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>
